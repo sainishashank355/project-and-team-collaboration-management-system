@@ -1,14 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project & Team Collaboration Management System</title>
+
+    <title>Login - <h1>ProSync</h1></title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <h1>Project & Team Collaboration Management System</h1>
-    <p>Our project management system</p>
+    <!-- Main Login Page -->
+    <div class="login-page">
+
+        <!-- Left Side -->
+        <div class="intro-section">
+
+            <!-- Website Logo and Name -->
+            <div class="brand">
+
+                <div class="logo">P</div>
+
+                <div>
+                    <h1>ProSync</h1>
+                    <p>Project & Team Collaboration</p>
+                </div>
+
+            </div>
+
+
+            <!-- Introduction -->
+            <div class="intro-content">
+
+                <h2>
+                    Manage your projects
+                    <br>
+                    in one place.
+                </h2>
+
+                <p>
+                    Plan projects, manage tasks, work with your team
+                    and keep track of your progress easily.
+                </p>
+
+
+                <!-- Features -->
+                <div class="features">
+
+                    <div class="feature">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>Manage Projects</h3>
+                            <p>Create and track your projects.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>Organize Tasks</h3>
+                            <p>Assign tasks and track their status.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>Work with Teams</h3>
+                            <p>Collaborate with your team members.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="login-section">
+
+            <div class="login-card">
+
+                <!-- Login Heading -->
+                <div class="login-heading">
+
+                    <h2>Welcome Back!</h2>
+
+                    <p>
+                        Login to access your workspace
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Login Options -->
+                    <div class="form-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>Remember me</span>
+
+                        </label>
+
+
+                        <a href="#" id="forgotPassword">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        id="loginBtn"
+                        class="login-btn"
+                    >
+                        Login
+                    </button>
+
+
+                    <!-- Message for future JavaScript -->
+                    <p
+                        id="loginMessage"
+                        class="login-message"
+                    ></p>
+
+                </form>
+
+
+                <!-- Register Link -->
+                <div class="register-link">
+
+                    <p>
+                        Don't have an account?
+
+                        <a href="register.html">
+                            Create Account
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- Security Information -->
+                <div class="security-info">
+                    🔒 Secure Project Workspace
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>
