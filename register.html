@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - ProSync</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="register-page">
+
+        <!-- Left Section -->
+        <div class="register-intro">
+
+            <div class="brand">
+                <div class="logo">P</div>
+                <h1>ProSync</h1>
+            </div>
+
+            <div class="register-intro-content">
+                <h2>Join Your Team</h2>
+
+                <p>
+                    Create your account and start managing
+                    projects, tasks and team collaboration
+                    in one place.
+                </p>
+
+                <div class="register-features">
+                    <p>✓ Manage Projects</p>
+                    <p>✓ Organize Tasks</p>
+                    <p>✓ Work with Teams</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="register-section">
+
+            <div class="register-card">
+
+                <h2>Create Account</h2>
+
+                <p class="register-subtitle">
+                    Enter your details to create your ProSync account.
+                </p>
+
+                <form id="registerForm">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="registerEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="Create a password"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Role -->
+                    <div class="form-group">
+                        <label for="role">Select Role</label>
+
+                        <select id="role" name="role">
+                            <option value="">Select your role</option>
+                            <option value="member">Team Member</option>
+                            <option value="leader">Team Leader</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Terms -->
+                    <div class="terms">
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                        >
+
+                        <label for="terms">
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+
+                    <!-- Button -->
+                    <button type="submit" class="register-btn">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="index.html">Login here</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
