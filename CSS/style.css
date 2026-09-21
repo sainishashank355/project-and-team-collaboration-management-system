@@ -1,5 +1,8 @@
+/* Tarun CSS portion */
+
+
 /* =========================
-   Basic Reset
+   BASIC RESET
 ========================= */
 
 * {
@@ -8,470 +11,346 @@
     box-sizing: border-box;
 }
 
-
-/* =========================
-   Body
-========================= */
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
     color: #1f2937;
 }
 
 
 /* =========================
-   Main Login Page
+   MAIN LAYOUT
 ========================= */
 
-.login-page {
-    min-height: 100vh;
-
+.dashboard-page {
     display: flex;
+    min-height: 100vh;
 }
 
 
 /* =========================
-   Left Introduction Section
+   SIDEBAR
 ========================= */
 
-.intro-section {
-    width: 55%;
-
-    background: #2563eb;
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #111827;
     color: white;
+    padding: 22px 16px;
+}
 
-    padding: 50px;
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
 
+.sidebar-logo {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563eb;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.sidebar-brand h2 {
+    font-size: 20px;
+}
+
+.sidebar-nav {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
-
-/* =========================
-   Brand
-========================= */
-
-.brand {
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
+.sidebar-nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 8px;
 }
 
-
-.logo {
-    width: 45px;
-    height: 45px;
-
-    background: white;
-    color: #2563eb;
-
-    border-radius: 9px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-    font-weight: bold;
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    background: #2563eb;
+    color: white;
 }
 
-
-.brand h1 {
-    font-size: 24px;
-}
-
-
-.brand p {
-    margin-top: 3px;
-
-    font-size: 12px;
-
-    opacity: 0.9;
-}
-
-
-/* =========================
-   Introduction Content
-========================= */
-
-.intro-content {
-    max-width: 550px;
-
-    margin: auto 0;
-}
-
-
-.intro-content h2 {
-    font-size: 40px;
-
-    line-height: 1.2;
-
-    margin-bottom: 20px;
-}
-
-
-.intro-content > p {
-    max-width: 480px;
-
-    font-size: 16px;
-
-    line-height: 1.6;
-
-    opacity: 0.9;
-}
-
-
-/* =========================
-   Features
-========================= */
-
-.features {
-    margin-top: 35px;
-}
-
-
-.feature {
-    display: flex;
-    align-items: center;
-
-    gap: 15px;
-
-    margin-bottom: 20px;
-}
-
-
-.feature > span {
-    width: 30px;
-    height: 30px;
-
-    background: white;
-    color: #2563eb;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-}
-
-
-.feature h3 {
-    font-size: 15px;
-
-    margin-bottom: 4px;
-}
-
-
-.feature p {
-    font-size: 13px;
-
-    opacity: 0.85;
-}
-
-
-/* =========================
-   Right Login Section
-========================= */
-
-.login-section {
-    width: 45%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 30px;
-}
-
-
-/* =========================
-   Login Card
-========================= */
-
-.login-card {
-    width: 100%;
-    max-width: 420px;
-
-    background: white;
-
-    padding: 40px;
-
-    border: 1px solid #e5e7eb;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.06);
-}
-
-
-/* =========================
-   Login Heading
-========================= */
-
-.login-heading {
-    margin-bottom: 30px;
-}
-
-
-.login-heading h2 {
-    font-size: 28px;
-
-    margin-bottom: 8px;
-}
-
-
-.login-heading p {
-    color: #6b7280;
-
-    font-size: 14px;
-}
-
-
-/* =========================
-   Form
-========================= */
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-
-.form-group label {
+.logout {
     display: block;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    margin-bottom: 8px;
-}
-
-
-.form-group input {
-    width: 100%;
-    height: 45px;
-
-    padding: 0 13px;
-
-    border: 1px solid #d1d5db;
-
-    border-radius: 7px;
-
-    font-size: 14px;
-
-    outline: none;
-}
-
-
-.form-group input:focus {
-    border-color: #2563eb;
-}
-
-
-/* =========================
-   Remember Me & Forgot Password
-========================= */
-
-.form-options {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    margin-bottom: 25px;
-
-    font-size: 13px;
-}
-
-
-.remember-me {
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-}
-
-
-.remember-me input {
-    cursor: pointer;
-}
-
-
-.form-options a {
-    color: #2563eb;
-
+    margin-top: 40px;
+    padding: 12px 14px;
+    color: #fca5a5;
     text-decoration: none;
 }
 
 
-.form-options a:hover {
-    text-decoration: underline;
+/* =========================
+   CONTENT
+========================= */
+
+.dashboard-content {
+    flex: 1;
+    padding: 35px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #6b7280;
 }
 
 
 /* =========================
-   Login Button
+   BUTTON
 ========================= */
 
-.login-btn {
-    width: 100%;
-    height: 45px;
-
-    border: none;
-
-    border-radius: 7px;
-
+.primary-btn {
     background: #2563eb;
-
     color: white;
-
-    font-size: 15px;
-
+    text-decoration: none;
+    padding: 11px 17px;
+    border-radius: 8px;
     font-weight: 600;
-
-    cursor: pointer;
 }
 
-
-.login-btn:hover {
+.primary-btn:hover {
     background: #1d4ed8;
 }
 
 
 /* =========================
-   Login Message
-   (For Future JavaScript)
+   PROJECT CARDS
 ========================= */
 
-.login-message {
-    min-height: 20px;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
 
-    margin-top: 10px;
+.project-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
-    text-align: center;
+.project-card-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
 
+.project-status {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.in-progress {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.project-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    color: #555;
     font-size: 13px;
 }
 
 
 /* =========================
-   Register Link
+   PROGRESS
 ========================= */
 
-.register-link {
-    text-align: center;
-
-    margin-top: 25px;
-
-    padding-top: 22px;
-
-    border-top: 1px solid #e5e7eb;
+.progress-area {
+    margin: 18px 0;
 }
 
-
-.register-link p {
-    color: #6b7280;
-
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
     font-size: 14px;
 }
 
+.progress-bar {
+    width: 100%;
+    height: 9px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-.register-link a {
-    color: #2563eb;
 
-    text-decoration: none;
 
+
+
+    /* =========================
+   PROJECT DETAILS PAGE
+========================= */
+
+.details-section {
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.details-section h2 {
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.details-section p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+
+/* Project Information */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.detail-box {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.detail-box span {
+    display: block;
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.detail-box strong {
+    color: #1f2937;
+    font-size: 15px;
+}
+
+
+/* Progress */
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 9px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    background: #2563eb;
+}
+
+.progress-65 {
+    width: 65%;
+}
+
+
+/* Features */
+
+.feature-list {
+    padding-left: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+
+/* Status */
+
+.project-status {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 13px;
     font-weight: 600;
 }
 
-
-.register-link a:hover {
-    text-decoration: underline;
+.in-progress {
+    background: #dbeafe;
+    color: #2563eb;
 }
 
 
-/* =========================
-   Security Info
-========================= */
+/* Responsive */
 
-.security-info {
-    text-align: center;
+@media (max-width: 900px) {
 
-    margin-top: 22px;
-
-    color: #6b7280;
-
-    font-size: 12px;
-}
-
-
-/* =========================
-   Tablet / Small Screen
-========================= */
-
-@media (max-width: 800px) {
-
-    .login-page {
-        flex-direction: column;
-    }
-
-
-    .intro-section {
-        width: 100%;
-
-        padding: 35px;
-    }
-
-
-    .intro-content {
-        margin: 50px 0 20px;
-    }
-
-
-    .intro-content h2 {
-        font-size: 32px;
-    }
-
-
-    .login-section {
-        width: 100%;
-
-        padding: 30px 20px;
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
+@media (max-width: 600px) {
 
-/* =========================
-   Mobile
-========================= */
-
-@media (max-width: 480px) {
-
-    .intro-section {
-        padding: 25px 20px;
-    }
-
-
-    .intro-content h2 {
-        font-size: 28px;
-    }
-
-
-    .login-card {
-        padding: 30px 22px;
-    }
-
-
-    .form-options {
-        font-size: 12px;
+    .details-grid {
+        grid-template-columns: 1fr;
     }
 
 }
